@@ -1,11 +1,13 @@
 import React from "react";
-import { EmailControlStrip } from "../../components";
+import { EmailControlStrip, EmailFilter } from "../../components";
 
 const EmailList = () => {
   return (
     <div className="">
       <EmailControlStrip />
-      <hr />
+      <hr className="w-[98%] mx-auto" />
+      <EmailFilter />
+      <hr className="w-[98%] mx-auto -my-[8px]" />
     </div>
   );
 };

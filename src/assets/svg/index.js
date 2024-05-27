@@ -18,3 +18,6 @@ export { default as NewMeetingIcon } from "./NewMeetingIcon";
 export { default as JoinMeetingIcon } from "./JoinMeetingIcon";
 export { default as ReloadIcon } from "./ReloadIcon";
 export { default as MoreIcon } from "./MoreIcon";
+export { default as CommunityIcon } from "./CommunityIcon";
+export { default as TagIcon } from "./TagIcon";
+export { default as InfoIcon } from "./InfoIcon";

@@ -4,3 +4,4 @@ export * from "./SearchBar";
 export * from "./EmailControlStrip";
 export * from "./SideNavigation";
 export * from "./RightActions";
+export * from "./EmailFilter";

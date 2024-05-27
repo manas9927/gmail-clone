@@ -12,16 +12,16 @@ const EmailControlStrip = () => {
       <div className="flex flex-row items-center justify-start">
         <input
           type="checkbox"
-          className="border-[#0000008A] w-[15px] h-[15px]"
+          className="border-[#0000008A] w-[15px] h-[15px] cursor-pointer"
         />
         <DropdownIcon />
-        <ReloadIcon className="ml-[16px]" />
-        <MoreIcon className="ml-[30px]" />
+        <ReloadIcon className="ml-[16px] cursor-pointer" />
+        <MoreIcon className="ml-[30px] cursor-pointer" />
       </div>
       <div className="flex flex-row items-center justify-start">
         <p className="text-[14px] text-primary-text p-[8px]">1–50 of 2,619</p>
-        <DownArrowIcon className="ml-[15px] transform rotate-90" />
-        <DownArrowIcon className="ml-[15px] transform -rotate-90" />
+        <DownArrowIcon className="ml-[15px] transform rotate-90 cursor-pointer" />
+        <DownArrowIcon className="ml-[15px] transform -rotate-90 cursor-pointer" />
       </div>
     </div>
   );
