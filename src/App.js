@@ -1,7 +1,5 @@
-import "./App.css";
+import Routes from "./components/Routes";
 
-function App() {
-  return <div className="bg-primary-text"></div>;
-}
+const App = () => <Routes />;
 
 export default App;
