@@ -1,11 +1,12 @@
 import React from "react";
-import Layout from "../../components/Layout/Layout";
+import { EmailControlStrip } from "../../components";
 
 const EmailList = () => {
   return (
-    <>
-      <Layout />
-    </>
+    <div className="">
+      <EmailControlStrip />
+      <hr />
+    </div>
   );
 };
 

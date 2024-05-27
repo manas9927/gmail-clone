@@ -5,14 +5,17 @@ import {
   Route as Page,
 } from "react-router-dom";
 import { Email, EmailList } from "../pages";
+import { Layout } from "./Layout";
 
 const Routes = () => {
   return (
     <Router>
-      <Pages>
-        <Page path="/" exact element={<EmailList />} />
-        <Page path="/email/:emailId" element={<Email />} />
-      </Pages>
+      <Layout>
+        <Pages>
+          <Page path="/" exact element={<EmailList />} />
+          <Page path="/email/:emailId" element={<Email />} />
+        </Pages>
+      </Layout>
     </Router>
   );
 };

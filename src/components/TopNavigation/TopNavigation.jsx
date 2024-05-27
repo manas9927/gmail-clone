@@ -13,7 +13,7 @@ const TopNavigation = () => (
   <div className="bg-primary-background w-screen flex flex-row items-center justify-start px-[18px] py-[9px] shadow-[0_-1px_0px_0px_#EDEFF1_inset] ">
     <div className="flex flex-row items-center justify-start p-[8px] w-[15%]">
       <HamburgerIcon className="mr-[20px]" />
-      <img src={GmailLogo} alt="" className="w-[109px] h-[40px]" />
+      <img src={GmailLogo} alt="Logo" className="w-[109px] h-[40px]" />
     </div>
     <div className=" w-[50%]">
       <SearchBar />
@@ -22,7 +22,7 @@ const TopNavigation = () => (
       <HelpIcon />
       <SettingsIcon />
       <AppsIcon />
-      <img src={Avatar} alt="" />
+      <img src={Avatar} alt="Profile" />
     </div>
   </div>
 );

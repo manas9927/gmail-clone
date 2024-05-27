@@ -1,6 +1,6 @@
 import React from "react";
 
-const MoreDropdownIcon = ({ className }) => {
+const DownArrowIcon = ({ className }) => {
   return (
     <svg
       width="12"
@@ -19,4 +19,4 @@ const MoreDropdownIcon = ({ className }) => {
   );
 };
 
-export default MoreDropdownIcon;
+export default DownArrowIcon;
