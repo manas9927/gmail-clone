@@ -21,7 +21,7 @@ const SearchBar = () => {
         type="text"
         value={searchValue}
         placeholder="Search mail"
-        className="placeholder-text bg-transparent w-[95%] px-[20px] "
+        className="placeholder-text bg-transparent w-[95%] mx-[20px]"
         onChange={onValueChange}
       />
       <DropdownIcon />

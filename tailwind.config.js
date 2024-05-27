@@ -11,6 +11,7 @@ module.exports = {
         secondary: {
           background: "#F5F7F7",
           text: "#000000",
+          low: "#0000008A",
         },
         gmail: {
           //grey

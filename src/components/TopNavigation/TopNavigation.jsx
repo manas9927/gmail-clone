@@ -10,15 +10,15 @@ import Avatar from "../../assets/images/avatar.png";
 import { SearchBar } from "../SearchBar";
 
 const TopNavigation = () => (
-  <div className="bg-primary-background w-full flex flex-row items-center justify-start px-[18px] py-[9px]">
-    <div className="flex flex-row items-center justify-start p-[8px] w-2/12">
+  <div className="bg-primary-background w-screen flex flex-row items-center justify-start px-[18px] py-[9px] shadow-[0_-1px_0px_0px_#EDEFF1_inset] ">
+    <div className="flex flex-row items-center justify-start p-[8px] w-[15%]">
       <HamburgerIcon className="mr-[20px]" />
       <img src={GmailLogo} alt="" className="w-[109px] h-[40px]" />
     </div>
-    <div className="w-6/12">
+    <div className=" w-[50%]">
       <SearchBar />
     </div>
-    <div className="flex flex-row items-center justify-end w-4/12 gap-[16px] ">
+    <div className="flex flex-row items-center justify-end  w-[35%] gap-[16px] ">
       <HelpIcon />
       <SettingsIcon />
       <AppsIcon />
