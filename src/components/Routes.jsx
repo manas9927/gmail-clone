@@ -13,7 +13,6 @@ const Routes = () => {
       <Layout>
         <Pages>
           <Page path="/" exact element={<EmailList />} />
-          <Page path="/email/:emailId" element={<Email />} />
         </Pages>
       </Layout>
     </Router>
