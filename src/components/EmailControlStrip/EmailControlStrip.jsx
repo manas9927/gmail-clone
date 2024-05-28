@@ -5,8 +5,9 @@ import {
   MoreIcon,
   ReloadIcon,
 } from "../../assets/svg";
+import { humanizeNumber } from "../../utils/numbers";
 
-const EmailControlStrip = () => {
+const EmailControlStrip = ({ from, to, total }) => {
   return (
     <div className="flex flex-row p-[14px] items-center justify-between">
       <div className="flex flex-row items-center justify-start">
@@ -19,7 +20,9 @@ const EmailControlStrip = () => {
         <MoreIcon className="ml-[30px] cursor-pointer" />
       </div>
       <div className="flex flex-row items-center justify-start">
-        <p className="text-[14px] text-primary-text p-[8px]">1–50 of 2,619</p>
+        <p className="text-[14px] text-primary-text p-[8px]">
+          {from}–{to} of {humanizeNumber(total)}
+        </p>
         <DownArrowIcon className="ml-[15px] transform rotate-90 cursor-pointer" />
         <DownArrowIcon className="ml-[15px] transform -rotate-90 cursor-pointer" />
       </div>

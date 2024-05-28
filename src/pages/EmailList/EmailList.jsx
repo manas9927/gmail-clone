@@ -2,9 +2,16 @@ import React from "react";
 import { EmailControlStrip, EmailFilter } from "../../components";
 
 const EmailList = () => {
+  const lowerLimit = 1;
+  const upperLimit = 50;
+  const totalEmails = 2619;
   return (
     <div className="">
-      <EmailControlStrip />
+      <EmailControlStrip
+        from={lowerLimit}
+        to={upperLimit}
+        total={totalEmails}
+      />
       <hr className="w-[98%] mx-auto" />
       <EmailFilter />
       <hr className="w-[98%] mx-auto -my-[8px]" />

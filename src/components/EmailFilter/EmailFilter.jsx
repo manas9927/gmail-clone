@@ -7,7 +7,12 @@ const EmailFilter = () => {
       {emailFilters.map((filter) => {
         return (
           <div
-            className={`flex flex-row items-center justify-start px-[50px] py-[16px] gap-[20px] ${
+            style={{
+              borderBottom: filter.isActive
+                ? `2px solid ${filter.color}`
+                : "none",
+            }}
+            className={`flex flex-row items-center justify-start px-[32px] py-[16px] gap-[20px] ${
               filter.isActive && ` border-b-2 border-[${filter.color}]`
             }`}
           >
@@ -23,7 +28,8 @@ const EmailFilter = () => {
                 {filter.title}
                 {filter.unreadCount && (
                   <span
-                    className={`px-[4px] py-[1px] ml-[4px] text-[12px] text-white bg-[${filter.color}] rounded-[2px]`}
+                    style={{ backgroundColor: filter.color }}
+                    className={`px-[4px] py-[1px] ml-[4px] text-[12px] text-white rounded-[2px]`}
                   >
                     {filter.unreadCount} New
                   </span>
