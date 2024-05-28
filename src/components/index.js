@@ -5,3 +5,4 @@ export * from "./EmailControlStrip";
 export * from "./SideNavigation";
 export * from "./RightActions";
 export * from "./EmailFilter";
+export * from "./EmailCard";

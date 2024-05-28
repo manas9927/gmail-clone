@@ -12,6 +12,7 @@ const EmailFilter = () => {
                 ? `2px solid ${filter.color}`
                 : "none",
             }}
+            key={filter.id}
             className={`flex flex-row items-center justify-start px-[32px] py-[16px] gap-[20px] ${
               filter.isActive && ` border-b-2 border-[${filter.color}]`
             }`}

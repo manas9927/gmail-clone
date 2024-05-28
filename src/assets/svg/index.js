@@ -21,3 +21,5 @@ export { default as MoreIcon } from "./MoreIcon";
 export { default as CommunityIcon } from "./CommunityIcon";
 export { default as TagIcon } from "./TagIcon";
 export { default as InfoIcon } from "./InfoIcon";
+export { default as StarIcon } from "./StarIcon";
+export { default as LabelIcon } from "./LabelIcon";

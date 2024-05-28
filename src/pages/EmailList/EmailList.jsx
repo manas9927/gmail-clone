@@ -1,5 +1,6 @@
 import React from "react";
-import { EmailControlStrip, EmailFilter } from "../../components";
+import { EmailCard, EmailControlStrip, EmailFilter } from "../../components";
+import { emailList } from "../../data/emailList";
 
 const EmailList = () => {
   const lowerLimit = 1;
@@ -15,6 +16,11 @@ const EmailList = () => {
       <hr className="w-[98%] mx-auto" />
       <EmailFilter />
       <hr className="w-[98%] mx-auto -my-[8px]" />
+      <div className="mt-[12px]">
+        {emailList.map((email) => (
+          <EmailCard data={email} key={email.id} />
+        ))}
+      </div>
     </div>
   );
 };
