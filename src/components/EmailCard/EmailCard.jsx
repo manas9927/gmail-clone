@@ -5,7 +5,7 @@ import { formatTimestamp } from "../../utils/dateTime";
 const EmailCard = ({ data }) => {
   return (
     <div
-      className={`flex flex-row items-center justify-start py-[11px] px-[17px] cursor-pointer ${
+      className={`flex flex-row items-center justify-start py-[11px] px-[17px] cursor-pointer hover:bg-[#F2F5F5] hover:shadow-[1px_0px_0px_0px_#DADCE0,-1px_0px_0px_0px_#DADCE0,0px_1px_2px_0px_#3C40434D,0px_1px_3px_1px_#3C404326] ${
         data.read ? "bg-secondary-background" : "bg-primary-background"
       }`}
     >

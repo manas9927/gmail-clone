@@ -4,7 +4,7 @@ import { SideNavigation } from "../SideNavigation";
 import { RightActions } from "../RightActions";
 
 const Layout = ({ children }) => (
-  <div className="flex flex-col h-screen w-screen">
+  <div className="flex flex-col h-screen">
     <TopNavigation />
     <div className=" flex flex-row h-full">
       <div className="h-full w-[15%]">

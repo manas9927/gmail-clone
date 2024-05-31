@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   AddIcon,
   JoinMeetingIcon,
@@ -8,6 +8,11 @@ import {
 import { labels } from "../../data/labels";
 
 const SideNavigation = () => {
+  const [isActive, setIsActive] = useState(1);
+
+  const toggleActive = (id) => {
+    setIsActive(id);
+  };
   return (
     <div className="bg-primary-background h-full flex flex-col py-[15px] items-start justify-start relative">
       <button className="mx-[8px] p-[12px] rounded-[40px] shadow-[0px_1px_2px_0px_#00000026,0px_1px_3px_1px_#00000026] flex flex-row items-center justify-center">
@@ -18,32 +23,35 @@ const SideNavigation = () => {
         {labels.map((label) => (
           <div
             key={label.id}
-            className={`flex flex-row items-center justify-start cursor-pointer pl-[24px] py-[7.75px] rounded-[0px_32px_32px_0px] ${
-              label.isActive && "bg-[#F9E9E7]"
+            onClick={() => {
+              toggleActive(label.id);
+            }}
+            className={`flex flex-row items-center justify-start  cursor-pointer pl-[24px] py-[7.75px] rounded-[0px_32px_32px_0px] ${
+              label.id === isActive ? "bg-[#F9E9E7]" : "hover:bg-gmail-grey1"
             }`}
           >
             <div className="w-[15%]">
               <label.icon
-                fill={`${label.isActive ? "#C84031" : "#0000008A"} `}
+                fill={`${label.id === isActive ? "#C84031" : "#0000008A"} `}
               />
             </div>
             <p
               className={`w-[70%] ${
-                label.isActive ? "text-[#C84031]" : "text-primary-text "
+                label.id === isActive ? "text-[#C84031]" : "text-primary-text "
               }  ${label.unreadCount && "font-bold"}`}
             >
               {label.title}
             </p>
             <p
               className={`w-[10%] ${
-                label.isActive ? "text-[#C84031]" : "text-primary-text "
+                label.id === isActive ? "text-[#C84031]" : "text-primary-text "
               } ${label.unreadCount && "font-bold"}`}
             >
               {label.unreadCount ?? ""}
             </p>
           </div>
         ))}
-        <div className="flex flex-row items-center justify-center w-1/2 gap-[21.5px] py-[8px] cursor-pointer">
+        <div className="flex flex-row items-center justify-center  w-1/2 gap-[21.5px] py-[8px] cursor-pointer">
           <DownArrowIcon />
           <p>More</p>
         </div>

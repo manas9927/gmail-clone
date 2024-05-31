@@ -13,8 +13,8 @@ const EmailFilter = () => {
                 : "none",
             }}
             key={filter.id}
-            className={`flex flex-row items-center justify-start px-[32px] py-[16px] gap-[20px] ${
-              filter.isActive && ` border-b-2 border-[${filter.color}]`
+            className={`flex flex-row items-center justify-start cursor-pointer px-[32px] py-[16px] gap-[20px] ${
+              filter.isActive ? ` border-b-2 border-[${filter.color}]` : ``
             }`}
           >
             <filter.icon fill={filter.isActive ? filter.color : "#0000008A"} />
