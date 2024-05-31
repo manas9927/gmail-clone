@@ -18,7 +18,7 @@ const SearchBar = () => {
         className="placeholder-text bg-transparent w-[95%] mx-[20px]"
         onChange={onValueChange}
       />
-      <DropdownIcon />
+      <DropdownIcon className="cursor-pointer" />
     </div>
   );
 };
